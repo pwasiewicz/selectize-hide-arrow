@@ -23,3 +23,11 @@ $("#element").selectize({
   }
 });
 ```
+
+### Installation
+
+Use bower to install plugin:
+
+```bash
+bower install selectize-arrow-hide
+```
