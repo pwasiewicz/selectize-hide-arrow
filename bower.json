@@ -1,8 +1,8 @@
 {
   "name": "selectize-hide-arrow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plugin for selectize that hide dropdown arrow when input is non-empty.",
-  "main": ["./dist/js/selectize-hide-arrow.min.js", "./dist/css/selectize-hide-arrow.min.css"],
+  "main": ["./dist/js/selectize-hide-arrow.js", "./dist/css/selectize-hide-arrow.css"],
   "authors": [
     "Patryk Wasiewicz <patryk.wasiewicz@outlook.com>"
   ],

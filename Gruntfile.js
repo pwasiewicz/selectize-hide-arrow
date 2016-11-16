@@ -28,6 +28,21 @@ module.exports = function (grunt) {
           'dist/css/<%= pkg.name %>.min.css': 'src/<%= pkg.name %>.css'
         }
       }
+    },
+
+    copy: {
+      main: {
+        files: [
+          // includes files within path
+          {
+            src: 'src/<%= pkg.name %>.js',
+            dest: 'dist/js/<%= pkg.name %>.js'
+          }, {
+            src: 'src/<%= pkg.name %>.css',
+            dest: 'dist/css/<%= pkg.name %>.css'
+          }
+        ],
+      },
     }
   });
 
@@ -35,7 +50,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('jshint-stylish');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks("grunt-contrib-copy");
 
-
-  grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['jshint', 'uglify', 'cssmin', 'copy']);
 };
